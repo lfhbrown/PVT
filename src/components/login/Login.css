@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+.login-background {
+  display: flex;
+  width: 50vw;
+}
+.form-outer {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+.heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  font-size: 2rem;
+  color: darkgreen;
+}
+.olivedrab {
+  color: #7f2b0a;
+}
+.webkit-text-stroke {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+.form-outer {
+  display: flex;
+  justify-content: center; /* Center the form horizontally */
+  align-items: center; /* Center the form vertically */
+  background-color: rgb(247, 251, 254);
+}
+.form-inner {
+  display: flex;
+  text-align: center; /* Center the form content */
+  align-items: center;
+  flex-direction: column;
+  font-size: 36px;
+  padding-bottom: 10px;
+}
+.form-inner h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+}
+
+.pivot-logo-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+}
+
+.pivot-logo {
+}
+/*Changes the opacity of what it's applied to from transparent (opacity 1) to fully opaque (opacity 2)*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* fade-in is a class that you can apply to the component you want to apply the above animation*/
+
+.fade-in {
+  animation: fadeIn 1.2s forwards; /* Shorthand to include name, duration, and fill-mode */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 800px;
+}
+
+@keyframes logofadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.logo-fade-in {
+  animation: logofadeIn 1.2s forwards;
+  width: 75%;
+}
+
+@keyframes imagefadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.image-fade-in {
+  animation: logofadeIn 1.2s forwards;
+}
+
+/* * {
+  border: 1px solid black;
+} */
