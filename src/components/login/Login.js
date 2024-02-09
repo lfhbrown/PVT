@@ -37,35 +37,34 @@ const Login = () => {
       <div className="form-outer">
         <div className="pivot-logo-container">
           <img className="logo-fade-in" src={PivotLogo} alt="PivotLogo" />
+          {selectedComponent === 1 && (
+            <div className={fadeIn()}>
+              <LoginForm
+                signIn={signIn}
+                signUp={signUp}
+                forgotPassword={forgotPassword}
+              />
+            </div>
+          )}
+          {selectedComponent === 2 && (
+            <div className={fadeIn()}>
+              <SignUpForm
+                signIn={signIn}
+                signUp={signUp}
+                forgotPassword={forgotPassword}
+              />
+            </div>
+          )}
+          {selectedComponent === 3 && (
+            <div className={fadeIn()}>
+              <ForgotPassword
+                signIn={signIn}
+                signUp={signUp}
+                forgotPassword={forgotPassword}
+              />
+            </div>
+          )}
         </div>
-
-        {selectedComponent === 1 && (
-          <div className={fadeIn()}>
-            <LoginForm
-              signIn={signIn}
-              signUp={signUp}
-              forgotPassword={forgotPassword}
-            />
-          </div>
-        )}
-        {selectedComponent === 2 && (
-          <div className={fadeIn()}>
-            <SignUpForm
-              signIn={signIn}
-              signUp={signUp}
-              forgotPassword={forgotPassword}
-            />
-          </div>
-        )}
-        {selectedComponent === 3 && (
-          <div className={fadeIn()}>
-            <ForgotPassword
-              signIn={signIn}
-              signUp={signUp}
-              forgotPassword={forgotPassword}
-            />
-          </div>
-        )}
       </div>
     </div>
   );

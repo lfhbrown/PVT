@@ -44,15 +44,3 @@ body {
 .nav li:hover {
   color: goldenrod;
 }
-.enter-app {
-  padding: 5px 10px;
-  border: 2px solid white;
-  border-radius: 10px / 15px;
-  background-color: rgb(18, 20, 63);
-  color: white;
-  cursor: pointer;
-}
-
-.enter-app:hover {
-  color: goldenrod;
-}

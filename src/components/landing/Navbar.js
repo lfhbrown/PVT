@@ -12,12 +12,12 @@ const Navbar = () => {
           <Link to="/about">About</Link>
         </li>
         <li className="active">
-          <Link to="/contact">Contact</Link>
+          <button>Contact Modal</button>
         </li>
         <li className="active">
-          <Link to="/enterapp">
-            <button className="enter-app">Enter App</button>
-          </Link>
+          <li className="active">
+            <Link to="/faqs">FAQs</Link>
+          </li>
         </li>
       </ul>
     </nav>

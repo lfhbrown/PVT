@@ -1,0 +1,71 @@
+.video-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes stadiumFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.stadium {
+  animation: fadeIn 1.2s forwards;
+}
+
+.enter-app {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.large-button {
+  border-radius: 15px 15px;
+  border: solid 5px white;
+  color: white;
+  padding: 5px;
+  background-color: transparent;
+  font-size: 35px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.large-button:hover {
+  color: goldenrod;
+}
+
+@keyframes enterButton {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.enter-app {
+  animation: enterButton 4s forwards;
+}
+
+/* .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0.4);
+} */
