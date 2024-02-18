@@ -6,7 +6,6 @@ const Home = () => {
   return (
     <div className="video-container">
       <video className="stadium" src={StadiumAtNight} autoPlay loop muted />
-
       <div className="enter-app">
         <h1>Welcome</h1>
         <Link to="/enterapp">

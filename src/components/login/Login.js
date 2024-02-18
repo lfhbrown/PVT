@@ -3,7 +3,7 @@ import "./Login.css";
 import SignUpForm from "./SignUpForm";
 import ForgotPassword from "./ForgotPassword";
 import LoginForm from "./LoginForm";
-import Pivot from "../assets/Pivot2.png";
+import Pivot from "../assets/Pivot.png";
 import PivotLogo from "../assets/PivotLogo.png";
 
 const Login = () => {
