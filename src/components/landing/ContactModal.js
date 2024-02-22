@@ -2,7 +2,7 @@ import React from "react";
 import ContactForm from "./ContactForm";
 import Pivot from "../assets/Pivot.png";
 
-const ContactModal = ({ modal }) => {
+const ContactModal = ({ modal, onClose }) => {
   if (!modal) return null;
   return (
     <div className="overlay">
@@ -11,8 +11,7 @@ const ContactModal = ({ modal }) => {
           <img src={Pivot} alt="login-background" />
         </div>
         <div className="modal-right">
-          <p>X</p>
-          <ContactForm />
+          <p onClick={onClose}>X</p>
         </div>
       </div>
       ;

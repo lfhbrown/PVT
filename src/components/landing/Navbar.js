@@ -17,10 +17,15 @@ const Navbar = () => {
         </li>
         <li className="active">
           <button onClick={() => setModal(true)}>Contact</button>
-          <ContactModal modal={modal} />
+          <ContactModal modal={modal} onClose={() => setModal(false)} />
         </li>
         <li className="active">
           <Link to="/faqs">FAQs</Link>
+        </li>
+        <li>
+          <Link to="/enterapp">
+            <button>Enter App</button>
+          </Link>
         </li>
       </ul>
     </nav>

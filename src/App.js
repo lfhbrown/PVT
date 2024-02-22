@@ -4,8 +4,11 @@ import About from "./components/landing/About";
 import Home from "./components/landing/Home";
 import Login from "./components/login/Login";
 import { Route, Routes } from "react-router-dom";
+import { React, useState } from "react";
 
 function App() {
+  const [navbar, setNavBar] = useState(true);
+
   return (
     <>
       <Navbar />
